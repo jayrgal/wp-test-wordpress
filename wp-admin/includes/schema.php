@@ -861,6 +861,11 @@ function populate_roles_210() {
 	if ( ! empty( $role ) ) {
 		$role->add_cap( 'delete_posts' );
 	}
+
+	$role = get_role( 'content' );
+	if ( ! empty( $role ) ) {
+		$role->add_cap( 'delete_posts' );
+	}
 }
 
 /**
